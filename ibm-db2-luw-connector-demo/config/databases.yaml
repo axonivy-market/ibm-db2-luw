@@ -1,2 +1,7 @@
 # yaml-language-server: $schema=https://json-schema.axonivy.com/app/12.0.0/databases.json
 Databases:
+  DB2:
+    Url: jdbc:db2://localhost/dbtest
+    Driver: com.ibm.db2.jcc.DB2Driver
+    Password: ${decrypt:/ONFjKtA0h6caXsEaRP29A==}
+    Icon: res:/webContent/icons/db2.png
