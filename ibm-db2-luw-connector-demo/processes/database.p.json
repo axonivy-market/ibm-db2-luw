@@ -7,7 +7,7 @@
   "elements" : [ {
       "id" : "f0",
       "type" : "RequestStart",
-      "name" : "start",
+      "name" : "createTable",
       "config" : {
         "signature" : "start"
       },
@@ -15,14 +15,123 @@
         "at" : { "x" : 96, "y" : 64 }
       },
       "connect" : [
-        { "id" : "f2", "to" : "f1" }
+        { "id" : "f2", "to" : "f3" }
       ]
     }, {
       "id" : "f1",
       "type" : "TaskEnd",
       "visual" : {
-        "at" : { "x" : 352, "y" : 64 },
+        "at" : { "x" : 392, "y" : 64 },
         "labelOffset" : { "x" : 13, "y" : 33 }
       }
+    }, {
+      "id" : "f3",
+      "type" : "Database",
+      "name" : "Create Table",
+      "config" : {
+        "query" : {
+          "dbName" : "DB2",
+          "sql" : {
+            "kind" : "ANY",
+            "stmt" : [
+              "CREATE TABLE Db2Test (",
+              "  Name VARCHAR(250) NOT NULL",
+              ")"
+            ]
+          }
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 232, "y" : 64 }
+      },
+      "connect" : [
+        { "id" : "f4", "to" : "f1", "color" : "default" }
+      ]
+    }, {
+      "id" : "f5",
+      "type" : "RequestStart",
+      "name" : "read",
+      "config" : {
+        "signature" : "start2"
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 168 }
+      },
+      "connect" : [
+        { "id" : "f8", "to" : "f7" }
+      ]
+    }, {
+      "id" : "f6",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 392, "y" : 168 },
+        "labelOffset" : { "x" : 13, "y" : 33 }
+      }
+    }, {
+      "id" : "f7",
+      "type" : "Database",
+      "name" : "Read",
+      "config" : {
+        "query" : {
+          "dbName" : "DB2",
+          "sql" : {
+            "table" : "DB2TEST"
+          }
+        },
+        "output" : {
+          "map" : {
+            "out" : "in",
+            "out.result" : "recordset"
+          }
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 232, "y" : 168 }
+      },
+      "connect" : [
+        { "id" : "f9", "to" : "f6", "color" : "default" }
+      ]
+    }, {
+      "id" : "f10",
+      "type" : "RequestStart",
+      "name" : "write",
+      "config" : {
+        "signature" : "start22"
+      },
+      "visual" : {
+        "at" : { "x" : 96, "y" : 264 }
+      },
+      "connect" : [
+        { "id" : "f13", "to" : "f12" }
+      ]
+    }, {
+      "id" : "f11",
+      "type" : "TaskEnd",
+      "visual" : {
+        "at" : { "x" : 392, "y" : 264 },
+        "labelOffset" : { "x" : 13, "y" : 33 }
+      }
+    }, {
+      "id" : "f12",
+      "type" : "Database",
+      "name" : "Write",
+      "config" : {
+        "query" : {
+          "dbName" : "DB2",
+          "sql" : {
+            "kind" : "WRITE",
+            "table" : "DB2TEST",
+            "fields" : {
+              "NAME" : "\"Hello\""
+            }
+          }
+        }
+      },
+      "visual" : {
+        "at" : { "x" : 232, "y" : 264 }
+      },
+      "connect" : [
+        { "id" : "f14", "to" : "f11", "color" : "default" }
+      ]
     } ]
 }
