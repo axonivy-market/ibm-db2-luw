@@ -9,7 +9,7 @@
       "type" : "RequestStart",
       "name" : "createTable",
       "config" : {
-        "signature" : "start"
+        "signature" : "createTable"
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 64 }
@@ -52,7 +52,7 @@
       "type" : "RequestStart",
       "name" : "read",
       "config" : {
-        "signature" : "start2"
+        "signature" : "read"
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 168 }
@@ -96,7 +96,7 @@
       "type" : "RequestStart",
       "name" : "write",
       "config" : {
-        "signature" : "start22"
+        "signature" : "write"
       },
       "visual" : {
         "at" : { "x" : 96, "y" : 264 }

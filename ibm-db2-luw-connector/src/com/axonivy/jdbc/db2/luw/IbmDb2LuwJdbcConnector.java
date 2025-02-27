@@ -1,4 +1,4 @@
-package com.axonivy.jdbc.provider;
+package com.axonivy.jdbc.db2.luw;
 
 import java.sql.Connection;
 import java.sql.Driver;
@@ -9,7 +9,7 @@ import java.util.Properties;
 import com.ibm.db2.jcc.DB2Driver;
 
 import ch.ivyteam.db.jdbc.JdbcDriver;
-import ch.ivyteam.ivy.db.jdbc.provider.JdbcConnector;
+import ch.ivyteam.ivy.db.jdbc.spi.JdbcConnector;
 
 public class IbmDb2LuwJdbcConnector implements JdbcConnector {
 
