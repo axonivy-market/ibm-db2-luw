@@ -8,18 +8,25 @@ import java.util.Properties;
 
 import com.ibm.db2.jcc.DB2Driver;
 
-import ch.ivyteam.db.jdbc.JdbcDriver;
+import ch.ivyteam.ivy.db.jdbc.spi.DriverInfo;
 import ch.ivyteam.ivy.db.jdbc.spi.JdbcConnector;
 
 public class IbmDb2LuwJdbcConnector implements JdbcConnector {
 
+  private static final DriverInfo INFO = DriverInfo
+      .build(DB2Driver.class.getName(), "db2")
+      .name("DB2")
+      .database("DB2", "DB2")
+      .configurator().server(50000)
+      .toDriverInfo();
+
   @Override
-  public JdbcDriver driver() {
-    return JdbcDriver.DB2;
+  public DriverInfo info() {
+    return INFO;
   }
 
   @Override
-  public Driver registerDriver() {
+  public Driver register() {
     DB2Driver.getMyClassLoader(); // ensure driver is loaded and registered
     return DriverManager
         .drivers()
@@ -29,12 +36,12 @@ public class IbmDb2LuwJdbcConnector implements JdbcConnector {
   }
 
   @Override
-  public void deregisterDriver(Driver driver) throws SQLException {
+  public void deregister(Driver driver) throws SQLException {
     DriverManager.deregisterDriver(driver);
   }
 
   @Override
-  public Connection openConnection(String connectionUrl, Properties properties) throws SQLException {
+  public Connection open(String connectionUrl, Properties properties) throws SQLException {
     return DriverManager.getConnection(connectionUrl, properties);
   }
 }
