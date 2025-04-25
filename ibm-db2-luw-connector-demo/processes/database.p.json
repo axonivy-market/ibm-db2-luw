@@ -1,5 +1,5 @@
 {
-  "$schema" : "https://json-schema.axonivy.com/process/12.0.0/process.json",
+  "$schema" : "https://json-schema.axonivy.com/process/13.1.1/process.json",
   "id" : "193F458CF1538A3A",
   "config" : {
     "data" : "com.axonivy.market.ibm.db2.luw.connector.demo.databaseData"
@@ -133,5 +133,19 @@
       "connect" : [
         { "id" : "f14", "to" : "f11", "color" : "default" }
       ]
+    }, {
+      "id" : "f15",
+      "type" : "ProcessAnnotation",
+      "name" : [
+        "This process demonstrates the use of the IBM Db2 LUW Driver.",
+        "",
+        "To start an IBM Db2 LUW Database you can use the provided compose.yaml file:",
+        "",
+        "> docker compose up"
+      ],
+      "visual" : {
+        "at" : { "x" : 629, "y" : 137 },
+        "size" : { "width" : 278, "height" : 126 }
+      }
     } ]
 }

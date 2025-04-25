@@ -6,8 +6,7 @@ When you create your very valuable documentation, please be aware that this  is 
 
 # IBM DB2 LUW Connector
 
-Bitte übersetze mindestens das "Description"-Chapter aus https://github.com/axonivy-market/market-product/blob/master/ibm-db2-luw-connnector/README.md. Es wird auf unserer Homepage angezeigt.
-Falls Du darüber hinaus auch die anderen Chapter übersetzt, werden auch diese auf der Homepage auf Deutsch angezeigt.
+Stellt den IBM Db2 LUW (Linux, Unix und Windows) JDBC Treiber zur Verfügung.
 
 <!--
 Die Erläuterungen unter „MEIN-PRODUKT-NAME“ werden z.B. für den  Adobe Konnektor hier angezeigt: https://market.axonivy.com/adobe-acrobat-connector#tab-description wenn ein Nutzer Deutsch als Anzeigesprache ausgewählt hat.
