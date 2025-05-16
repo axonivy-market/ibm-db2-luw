@@ -6,7 +6,7 @@ When you create your very valuable documentation, please be aware that this Read
 
 # MY-PRODUCT-NAME
 
-YOUR DESCRIPTION GOES HERE: Please just give a short description here without further headings.
+Provides the IBM Db2 LUW (Linux, Unix and Windows) JDBC Driver
 
 <!--
 The explanations under "MY-RRODUCT-NAME" are displayed  e.g. for the Connector A-Trust here: https://market.axonivy.com/a-trust#tab-description   
@@ -14,7 +14,8 @@ The explanations under "MY-RRODUCT-NAME" are displayed  e.g. for the Connector A
 
 ## Demo
 
-YOUR DEMO DESCRIPTION GOES HERE
+The demo has three small processes. The first creates a table in the Db2 database.
+The second writes some data into the table and the third reads the data from the table.
 
 <!--
 We use all entries under the heading "Demo" for the demo-Tab on our Website, e.g. for the Connector A-Trust here: https://market.axonivy.com/a-trust#tab-demo  
@@ -22,11 +23,6 @@ We use all entries under the heading "Demo" for the demo-Tab on our Website, e.g
 
 ## Setup
 
-YOUR SETUP DESCRIPTION GOES HERE
-<!--
-The entries under the heading "Setup" are filled in this tab, e.g. for the Connector A-Trust here: https://market.axonivy.com/a-trust#tab-setup. 
--->
-
-```
-@variables.yaml@
-```
+On a command line `cd ibm-db2-luw-connector-demo` and execute `docker compose up`.
+This will start a IBM Db2 LUW database in a docker container.
+It takes a few minutes before the database is ready.
