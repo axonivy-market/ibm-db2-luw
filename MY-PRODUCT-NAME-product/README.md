@@ -1,32 +1,13 @@
-<!--
-Dear developer!     
-
-When you create your very valuable documentation, please be aware that this Readme.md is not only published on github. This documentation is also processed automatically and published on our website. For this to work, the two headings "Demo" and "Setup" must not be changed. Do also not change the order of the headings. Feel free to add sub-sections wherever you want.
--->
-
 # MY-PRODUCT-NAME
 
-YOUR DESCRIPTION GOES HERE: Please just give a short description here without further headings.
-
-<!--
-The explanations under "MY-RRODUCT-NAME" are displayed  e.g. for the Connector A-Trust here: https://market.axonivy.com/a-trust#tab-description   
--->
+Provides the IBM Db2 LUW (Linux, Unix and Windows) JDBC Driver
 
 ## Demo
 
-YOUR DEMO DESCRIPTION GOES HERE
-
-<!--
-We use all entries under the heading "Demo" for the demo-Tab on our Website, e.g. for the Connector A-Trust here: https://market.axonivy.com/a-trust#tab-demo  
--->
+The demo showcases three simple processes: The first creates a table in the Db2 database, the second inserts data into it, and the third retrieves the data.
 
 ## Setup
 
-YOUR SETUP DESCRIPTION GOES HERE
-<!--
-The entries under the heading "Setup" are filled in this tab, e.g. for the Connector A-Trust here: https://market.axonivy.com/a-trust#tab-setup. 
--->
-
-```
-@variables.yaml@
-```
+On a command line `cd ibm-db2-luw-connector-demo` and execute `docker compose up`.
+This will start a IBM Db2 LUW database in a docker container.
+It takes a few minutes before the database is ready.
