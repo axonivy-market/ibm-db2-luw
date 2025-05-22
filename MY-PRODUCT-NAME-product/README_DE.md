@@ -5,8 +5,7 @@ Falls Du darüber hinaus auch die anderen Chapter übersetzt, werden auch diese 
 
 ## Demo
 
-Das Demo besteht aus drei kleinen Prozessen. Der erste Prozess erstellt eine Tabelle in der Db2 Datenbank.
-Der zweite Prozess schreibt in die neue Tabelle und der dritte Prozess liest dies Daten von der Tabelle zurück.
+Die Demo zeigt drei einfache Prozesse: Der erste erstellt eine Tabelle in der Db2-Datenbank, der zweite fügt Daten ein und der dritte liest die Daten aus.
 
 ## Setup
 

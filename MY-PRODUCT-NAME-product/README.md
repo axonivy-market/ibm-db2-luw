@@ -1,25 +1,10 @@
-<!--
-Dear developer!     
-
-When you create your very valuable documentation, please be aware that this Readme.md is not only published on github. This documentation is also processed automatically and published on our website. For this to work, the two headings "Demo" and "Setup" must not be changed. Do also not change the order of the headings. Feel free to add sub-sections wherever you want.
--->
-
 # MY-PRODUCT-NAME
 
 Provides the IBM Db2 LUW (Linux, Unix and Windows) JDBC Driver
 
-<!--
-The explanations under "MY-RRODUCT-NAME" are displayed  e.g. for the Connector A-Trust here: https://market.axonivy.com/a-trust#tab-description   
--->
-
 ## Demo
 
-The demo has three small processes. The first creates a table in the Db2 database.
-The second writes some data into the table and the third reads the data from the table.
-
-<!--
-We use all entries under the heading "Demo" for the demo-Tab on our Website, e.g. for the Connector A-Trust here: https://market.axonivy.com/a-trust#tab-demo  
--->
+The demo showcases three simple processes: The first creates a table in the Db2 database, the second inserts data into it, and the third retrieves the data.
 
 ## Setup
 
