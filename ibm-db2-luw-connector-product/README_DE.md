@@ -9,6 +9,6 @@ Der zweite Prozess schreibt in die neue Tabelle und der dritte Prozess liest die
 
 ## Setup
 
-Auf der Kommandozeile tippen Sie `cd ibm-db2-luw-connector-demo` und führen dann `docker compose up` aus.
+Auf der Kommandozeile tippen Sie `cd ibm-db2-luw-connector-demo/docker` und führen dann `docker compose up` aus.
 Nun wir eine IBM Db2 LUW Datenbank in einem Docker Kontainer gestartet.
 Es dauert einige Minuten bis die Datenbank bereit ist.
