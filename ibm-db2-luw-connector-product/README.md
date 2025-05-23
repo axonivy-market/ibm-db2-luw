@@ -23,6 +23,6 @@ We use all entries under the heading "Demo" for the demo-Tab on our Website, e.g
 
 ## Setup
 
-On a command line `cd ibm-db2-luw-connector-demo` and execute `docker compose up`.
+On a command line `cd ibm-db2-luw-connector-demo/docker` and execute `docker compose up`.
 This will start a IBM Db2 LUW database in a docker container.
 It takes a few minutes before the database is ready.

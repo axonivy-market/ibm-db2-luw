@@ -20,7 +20,7 @@ class TestIbmDb2LuwJdbcConnector {
 
   @Container
   @SuppressWarnings("resource")
-  public final ComposeContainer db2 = new ComposeContainer(new File("../ibm-db2-luw-connector-demo/compose.yaml"))
+  public final ComposeContainer db2 = new ComposeContainer(new File("../ibm-db2-luw-connector-demo/docker/compose.yaml"))
       .withExposedService("db2-1", 50000)
       .waitingFor("db2-1", Wait.forLogMessage(".*Setup has completed.*", 1).withStartupTimeout(Duration.ofMinutes(10)));
 
