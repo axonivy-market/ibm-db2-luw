@@ -8,7 +8,7 @@
     <version>13.1.0-SNAPSHOT</version>
     <relativePath></relativePath>
   </parent>
-  <groupId>com.axonivy.connector.ibm-db2-luw</groupId>
+  <groupId>com.axonivy.connector.ibmdb2luw</groupId>
   <artifactId>ibm-db2-luw-connector</artifactId>
   <version>13.1.0-SNAPSHOT</version>
   <packaging>iar</packaging>
