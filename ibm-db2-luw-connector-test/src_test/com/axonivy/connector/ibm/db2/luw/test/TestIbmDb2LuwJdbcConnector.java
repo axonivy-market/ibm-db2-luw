@@ -1,4 +1,4 @@
-package com.axonivy.market.test;
+package com.axonivy.connector.ibm.db2.luw.test;
 
 import java.io.File;
 import java.time.Duration;
