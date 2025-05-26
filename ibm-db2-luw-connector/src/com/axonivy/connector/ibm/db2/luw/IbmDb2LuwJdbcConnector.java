@@ -1,4 +1,4 @@
-package com.axonivy.jdbc.db2.luw;
+package com.axonivy.connector.ibm.db2.luw;
 
 import java.sql.Connection;
 import java.sql.Driver;
