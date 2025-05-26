@@ -1,7 +1,7 @@
-# MY-PRODUCT-NAME
+# IBM DB2 LUW Connector
 
-[![CI Build](https://github.com/axonivy-market/REPO-NAME/actions/workflows/ci.yml/badge.svg)](https://github.com/axonivy-market/REPO-NAME/actions/workflows/ci.yml)
+[![CI Build](https://github.com/axonivy-market/ibm-db2-luw/actions/workflows/ci.yml/badge.svg)](https://github.com/axonivy-market/ibm-db2-luw/actions/workflows/ci.yml)
 
-"YOUR SHORT DESCRIPTION GOES HERE"
+Provides the IBM Db2 LUW (Linux, Unix and Windows) JDBC Driver.
 
-Read our [documentation](MY-PRODUCT-NAME-product/README.md).
+Read our [documentation](ibm-db2-luw-connector-product/README.md).
