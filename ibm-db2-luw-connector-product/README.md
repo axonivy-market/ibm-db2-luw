@@ -1,4 +1,4 @@
-# MY-PRODUCT-NAME
+# IBM DB2 LUW Connector
 
 Provides the IBM Db2 LUW (Linux, Unix and Windows) JDBC Driver
 
