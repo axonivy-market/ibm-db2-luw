@@ -1,13 +1,16 @@
-# IBM DB2 LUW Connector
+# #IBM DB2 LUW Anschluss
 
-Stellt den IBM Db2 LUW (Linux, Unix und Windows) JDBC Treiber zur Verfügung.
+Versieht #der #IBM Db2 LUW (Linux, #Unix und Fenster) JDBC Fahrer
 
 ## Demo
 
-Die Demo zeigt drei einfache Prozesse: Der erste erstellt eine Tabelle in der Db2-Datenbank, der zweite fügt Daten ein und der dritte liest die Daten aus.
+Die Demo Vitrinen drei simple Arbeitsgänge: Das zuerst schafft einen Tisch
+herein den Db2 Datenbank, die Sekunde fügt ein #Daten hinein ihm, und der
+#Dritter #wiedergewinnen #der #Daten.
 
-## Setup
+## Einrichtung
 
-Auf der Kommandozeile tippen Sie `cd ibm-db2-luw-connector-demo/docker` und führen dann `docker compose up` aus.
-Nun wir eine IBM Db2 LUW Datenbank in einem Docker Kontainer gestartet.
-Es dauert einige Minuten bis die Datenbank bereit ist.
+Auf eine Befehl Linie `cd ibm-db2-luw-Anschluss-Demo/Hafenarbeiter` und
+exekutieren `Hafenarbeiter fasst ab hin`. Dies will #ein #IBM starten Db2 LUW
+Datenbank in einen Hafenarbeiter Behälter. Es nimmt einige Minuten vor die
+Datenbank ist bereit.
