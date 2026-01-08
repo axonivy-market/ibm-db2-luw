@@ -7,10 +7,10 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>${project.name}</module>
-    <module>${project.name}-demo</module>
-    <module>${project.name}-test</module>
-    <module>${project.name}-product</module>
+    <module>ibm-db2-luw</module>
+    <module>ibm-db2-luw-demo</module>
+    <module>ibm-db2-luw-test</module>
+    <module>ibm-db2-luw-product</module>
   </modules>
 
   <scm>
